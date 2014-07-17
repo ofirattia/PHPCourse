@@ -1,0 +1,67 @@
+html {direction:rtl;}
+body {
+  margin-top: 50px;
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 5px 15px;
+}
+.desc h3 { font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; font-weight: normal; letter-spacing: -0.03em; color: #444; font-size: 1.9em; margin-bottom: 8px;margin:5px;}
+.desc{margin:5px;}
+
+h2 {
+    width:150px;
+    background: #222;
+    color:  #eee;
+    line-height: 25px;
+    font-size: 14px;
+    padding: 0 10px;
+    cursor: pointer;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; font-weight: normal;
+}
+ol.select {
+    display: none;
+	z-index:9999;
+	list-style-type:none
+}
+
+ol.select > li {
+   
+    /*background: #eee;*/
+    line-height: 25px;
+    font-size: 14px;
+    padding: 0 10px;
+    cursor: pointer;
+	z-index:9999;
+}
+/* if you want to make background when you hover on each item in your drop down flag list
+ol.select > li:hover {
+    background: #aaa;
+}*/
+
+.red{color:red;}
+/* this is for the messages */
+#status{
+		display:none; 
+		margin-bottom:15px; 
+		padding:5px 10px; 
+		border-radius:5px;
+		margin:5px;
+	}
+.success{
+		background: #B6D96C;
+	}
+	
+.error{
+		background: #ffc5cf; 
+	}
+.warning{
+		background: #fabf20; 
+	}
+#denotes{position:absolute;left:25px;font-size: 13px;}
+#additionalDetails{bottom:9px;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;font-size: 1.5em; color: #333; line-height: 1.3em;}
