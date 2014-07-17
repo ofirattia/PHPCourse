@@ -1,0 +1,23 @@
+<?php
+/**
+
+		WRITE BOOTSTRAP FORM - User Registration Form
+		THE FORM INCLUDE:
+			1) Username - Required
+			2) Password - Required
+			4) Email    - Required
+			5) First name
+			6) Last name
+			7) Gender
+			8) Address
+			9) Phone
+			
+		OnClick submit, you validate the fields of the form and notify the user about claws.
+		 a) the method of sending the form information is POST.
+		 b) on the php file store the information of the fields in array, Notice : $var = $_POST['YOUR FIELD']
+		 c) echo the array.
+		 
+		Note: you have an example of form in the folder bootstrap-form.
+		ENJOY.
+*/
+?>
