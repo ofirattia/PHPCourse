@@ -62,6 +62,9 @@ foreach ($travel as $t){
  the page should reload with the new additions added to the previously 
  expanded list. Your code should allow the user to add items as many times
  as they like.
+ 
+ SOME HELP:
+ 	Convert user input string into an array -> explode function ( READ PHP DOCS )
 
 */
  
