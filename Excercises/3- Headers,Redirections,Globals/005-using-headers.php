@@ -11,6 +11,18 @@
  * disabled or not properly installed.
  *
  * Ensure that you have 'extension=gd.so' in your php.ini
+ * 
+ * 
+ * output file example
+ * 
+
+   
+   header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+   header("Content-Disposition: attachment;filename=\"1.xls\"");
+   header("Cache-Control: max-age=0");
+ *
+ * 
+ * 
  */
 
 if (! function_exists('imagecreate')) {
