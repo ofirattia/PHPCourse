@@ -4,6 +4,11 @@
  * Simple text encoding service
  *
  * This sample shows handling simple POST forms
+ * 
+ * Roy Shoa Added:
+ *      Put @ to silence error to REQUEST,GET,POST
+ *      1) @$_REQUEST['VARIABLE'] -> if its unset it will assign empty var without error, otherwise -> data.
+ *      
  */
 
 $result = null;
