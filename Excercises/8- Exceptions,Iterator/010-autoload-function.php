@@ -15,22 +15,9 @@ function __autoload($class)
     }
 }
 
-/**
- * This shows how another autoloader can be registered with
- * spl_autoload_register()
- */
 
 
-function myFrameworkAutoloader($class)
-{
-    if (substr($class, 0, 7) != "Shahar_") {
-        return false;
-    }
 
-    $filename = SHAHAR_BASEDIR . '/library/' .
-                str_replace('_', '/', $class);
+$ob = new myClass();
 
-    require_once $filename;
-}
-
-spl_autoload_register('myFrameworkAutoloader');
+?>
