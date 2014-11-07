@@ -88,9 +88,16 @@ abstract class PDOFactory
         return $config;
     }
 }
+putenv("APPLICATION_ENV=development");
+$ip = getenv("REMOTE_ADDR") ;  Echo "Your IP is " . $ip; 
+//Gets the document root  
+$root = getenv("DOCUMENT_ROOT") ;  Echo $root; 
+$ad = getenv("SERVER_ADMIN") ;  Echo $ad; 
+
 
 // Now we can create PDO objects based on simple configuration files
-$environment = getenv('APPLICATION_ENV') ?: 'production';
+$app_env = getenv('APPLICATION_ENV');
+$environment = getenv('APPLICATION_ENV') ? $app_env : 'production';
 $config = parse_ini_file('config.ini', true);
 
 if (isset($config[$environment])) {
@@ -98,5 +105,7 @@ if (isset($config[$environment])) {
 } else {
     throw new Exception("Configuration file does not define settings for environment $environment");
 }
-
+print_r( $config );
+die();
 $pdo = PDOFactory::factory($config);
+
